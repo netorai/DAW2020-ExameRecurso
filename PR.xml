@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pr>
+    <meta>
+        <key>DAW2021::Exame Recursos</key>
+        <title>Recurso DAW</title>
+        <bdate>Fevereiro 2021</bdate>
+        <edate>Fevereiro 2021</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="PG42814">
+            <name>Raimundo Nonato Barros Neto</name>
+            <email>pg42814@alunos.uminho.pt</email>
+        </member>
+    </team>
+    <abstract>
+        <p>Exercício 1:</p>
+        <p>Para importar o database foi utilizado o seguinte comando $ mongoimport -d Team -c teams --jsonArray PEI-teams.json.<p>
+        <p>Exercício 2:</p>
+        <p>1. Quantas equipes existem na base de dados?</p>
+        <p> R: 87 / "db.teams.distinct("team").length" </p>
+        <p>2. Quais as equipes? (lista com os nomes das equipes ordenada alfabeticamente) </p>
+        <p> R: Devido a quantidade de team, não inserir neste ficheiro o resultado, apenas a query. "db.teams.distinct("team")"</p>
+        <p>3. Quantos alunos existem catalogados na base de dados?</p>
+        <p>R: 813 / "db.teams.distinct("members.id").length"
+        <p>Exercício 3:</p>
+        <p>Antes de iniciar, foi criado express/ $ express --view=pug teamssApp</p>
+        <p>Alineas respondiddas </p>
+        <p>GET /api/teams</p>
+        <p>1GET /api/teams/:id</p>
+        <p>POST /api/teams</p>
+        <p>DELETE /api/teams/:id</p>
+        <p>Exercício 3:</p>
+        <p>1. Foi inserido um novo view "teams.pug", exibindo as informações do GET/api/teams/:id
+
+    
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/netorai/DAW2020-ExameRecurso">Resolução Recurso DAW2021</link>
+    </deliverables>
+</pr>
